@@ -525,17 +525,17 @@ fun EqnCoeffRow(r: Int, cols: Int, coeffData: Array<DoubleArray>, viewModel: Cal
 @Composable
 fun RowScope.EqnCell(r: Int, c: Int, coeffData: Array<DoubleArray>, viewModel: CalculatorViewModel) {
     val activeCell = coeffData[r][c]
-    val label = when (c) {
+    val labelVal = when (c) {
         0 -> "a"
         1 -> "b"
         2 -> "c"
         else -> "d"
     }
-    var cellTextState = remember(viewModel.eqnType, r, c) { mutableStateOf(activeCell.toString().replace("0.0", "")) }
+    val cellTextState = remember(viewModel.eqnType, r, c) { mutableStateOf<String>(activeCell.toString().replace("0.0", "")) }
 
     OutlinedTextField(
         value = cellTextState.value,
-        onValueChange = { newValue ->
+        onValueChange = { newValue: String ->
             cellTextState.value = newValue
             val numeric = newValue.toDoubleOrNull() ?: 0.0
             viewModel.updateEqnCoefficient(r, c, numeric)
@@ -543,7 +543,7 @@ fun RowScope.EqnCell(r: Int, c: Int, coeffData: Array<DoubleArray>, viewModel: C
         textStyle = TextStyle(color = Color.White, fontFamily = FontFamily.Monospace, fontSize = 12.sp, textAlign = TextAlign.Center),
         modifier = Modifier.weight(1f).testTag("eqn_coeff_input_${r}_${c}"),
         keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
-        label = { Text(label, color = ShiftAmber, fontSize = 8.sp) },
+        label = { Text(labelVal, color = ShiftAmber, fontSize = 8.sp) },
         colors = OutlinedTextFieldDefaults.colors(
             focusedBorderColor = ShiftAmber,
             unfocusedBorderColor = Color.Gray.copy(0.4f)
