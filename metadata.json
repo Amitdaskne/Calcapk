@@ -1,0 +1,6 @@
+{
+  "name": "Scientific Calculator",
+  "description": "Scientific calculator with all primary Casio ClassWiz features including COMP, Complex, Base-N, Equation Solver, Matrix operations, Table creation, Statistics, Conversions, and Constants library.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

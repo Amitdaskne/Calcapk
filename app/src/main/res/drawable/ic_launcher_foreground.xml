@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Outer metal chassis shadow -->
+    <path
+        android:fillColor="#10000000"
+        android:pathData="M27,23h54v66C81,91.3 78.3,94 75,94H33C29.7,94 27,91.3 27,89V23Z" />
+
+    <!-- Main Chassis Body -->
+    <path
+        android:fillColor="#2D3238"
+        android:strokeColor="#4A525A"
+        android:strokeWidth="1.5"
+        android:pathData="M28,21h52v64C80,88.9 77.3,91 74,91H34C30.7,91 28,88.9 28,85V21Z" />
+
+    <!-- Screen frame -->
+    <path
+        android:fillColor="#1E2124"
+        android:pathData="M33,26h42v18c0,1 -0.9,2 -2,2H35c-1.1,0 -2,-0.9 -2,-2V26Z" />
+
+    <!-- Warm Retro Golden Green LCD display -->
+    <path
+        android:fillColor="#9BA38F"
+        android:pathData="M35,28h38v12H35Z" />
+
+    <!-- LCD status indicators (representing DEG, MathI indicators) -->
+    <path
+        android:fillColor="#506050"
+        android:pathData="M36,29.5 h2 v0.8 h-2 Z M40,29.5 h1.5 v0.8 h-1.5 Z M69,29.5 h3 v0.8 h-3 Z" />
+
+    <!-- Scientific math content inside the screen (e.g. fx-991 symbols) -->
+    <path
+        android:strokeColor="#2F3E37"
+        android:strokeWidth="1"
+        android:strokeLineCap="round"
+        android:pathData="M37,36 l4,-4 M37,32 l4,4 M43,34 h4 m0,-2 v4 M49,34 h3.5" />
+
+    <!-- Keypad Divider Line -->
+    <path
+        android:strokeColor="#1E2124"
+        android:strokeWidth="1"
+        android:pathData="M30,49h48" />
+
+    <!-- Tactile Grid Keys -->
+    <!-- Row 1 Function Keys (Charcoal slate) -->
+    <path android:fillColor="#1A1C1E" android:pathData="M32,52h8v5c0,0.5 -0.4,1 -1,1h-6c-0.6,0 -1,-0.5 -1,-1z" />
+    <path android:fillColor="#1A1C1E" android:pathData="M43,52h8v5c0,0.5 -0.4,1 -1,1h-6c-0.6,0 -1,-0.5 -1,-1z" />
+    <path android:fillColor="#C755E8" android:pathData="M54,52h10v5c0,0.5 -0.4,1 -1,1h-8c-0.6,0 -1,-0.5 -1,-1z" /> <!-- ALPHA violet -->
+    <path android:fillColor="#FFB300" android:pathData="M67,52h9v5c0,0.5 -0.4,1 -1,1h-7c-0.6,0 -1,-0.5 -1,-1z" /> <!-- SHIFT amber -->
+
+    <!-- Row 2 (graphite numbers) -->
+    <path android:fillColor="#3E454F" android:pathData="M32,61h9v5c0,0.5 -0.4,1 -1,1h-7c-0.6,0 -1,-0.5 -1,-1z" />
+    <path android:fillColor="#3E454F" android:pathData="M44,61h9v5c0,0.5 -0.4,1 -1,1h-7c-0.6,0 -1,-0.5 -1,-1z" />
+    <path android:fillColor="#3E454F" android:pathData="M56,61h9v5c0,0.5 -0.4,1 -1,1h-7c-0.6,0 -1,-0.5 -1,-1z" />
+    <path android:fillColor="#D93838" android:pathData="M68,61h8v5c0,0.5 -0.4,1 -1,1h-6c-0.6,0 -1,-0.5 -1,-1z" /> <!-- DEL crimson -->
+
+    <!-- Row 3 -->
+    <path android:fillColor="#3E454F" android:pathData="M32,70h9v5c0,0.5 -0.4,1 -1,1h-7c-0.6,0 -1,-0.5 -1,-1z" />
+    <path android:fillColor="#3E454F" android:pathData="M44,70h9v5c0,0.5 -0.4,1 -1,1h-7c-0.6,0 -1,-0.5 -1,-1z" />
+    <path android:fillColor="#3E454F" android:pathData="M56,70h9v5c0,0.5 -0.4,1 -1,1h-7c-0.6,0 -1,-0.5 -1,-1z" />
+    <path android:fillColor="#1A1C1E" android:pathData="M68,70h8v5c0,0.5 -0.4,1 -1,1h-6c-0.6,0 -1,-0.5 -1,-1z" /> <!-- mult operator -->
+
+    <!-- Row 4 -->
+    <path android:fillColor="#3E454F" android:pathData="M32,79h9v5c0,0.5 -0.4,1 -1,1h-7c-0.6,0 -1,-0.5 -1,-1z" />
+    <path android:fillColor="#3E454F" android:pathData="M44,79h9v5c0,0.5 -0.4,1 -1,1h-7c-0.6,0 -1,-0.5 -1,-1z" />
+    <path android:fillColor="#3E454F" android:pathData="M56,79h9v5c0,0.5 -0.4,1 -1,1h-7c-0.6,0 -1,-0.5 -1,-1z" />
+    <path android:fillColor="#FFB300" android:pathData="M68,79h8v5c0,0.5 -0.4,1 -1,1h-6c-0.6,0 -1,-0.5 -1,-1z" /> <!-- equals yellow -->
+
+</vector>
